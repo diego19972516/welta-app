@@ -4,6 +4,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'core/constants/app_colors.dart';
 import 'features/auth/screens/login_screen.dart';
 import 'features/auth/screens/register_screen.dart';
+import 'features/home/screens/home_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,7 +37,7 @@ class WeltaApp extends StatelessWidget {
       routes: {
         '/login':    (_) => const LoginScreen(),
         '/register': (_) => const RegisterScreen(),
-        '/home':     (_) => const HomeTemp(),
+        '/home': (_) => const HomeScreen(),
       },
     );
   }
